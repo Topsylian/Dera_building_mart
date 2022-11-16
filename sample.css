@@ -1,0 +1,43 @@
+body {
+	padding: 5px 25px;
+}
+
+.container {
+	padding: 10px;
+	background-color: black;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	width: 100%;
+}
+
+.box {
+	padding: auto;
+	background-color: pink;
+	height: 450px;
+	flex-grow: 2;
+}
+
+.box img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+@media screen and (max-width: 1600px) {
+	.box {
+		padding: auto;
+		background-color: pink;
+		height: 450px;
+		flex: 2 2 70%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.box {
+		padding: auto;
+		background-color: pink;
+		height: 450px;
+		flex: 2 2 100%;
+	}
+}
