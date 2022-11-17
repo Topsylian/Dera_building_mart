@@ -228,7 +228,7 @@ button {
 .about-heading > h2 > span,
 .service-heading > span,
 .project-heading > span,
-.collection-heading > h2 > span {
+.ceo-heading > span {
   position: relative;
 }
 
@@ -236,7 +236,7 @@ button {
 .about-heading > h2 > span > .purple-bg,
 .service-heading > span > .purple-bg,
 .project-heading > span > .purple-bg,
-.collection-heading > h2 > span > .purple-bg {
+.ceo-heading > span > .purple-bg {
   background: var(--accent);
   width: 85%;
   padding: 10px;
@@ -686,6 +686,111 @@ div.about-phone > a > img {
   z-index: 1;
 }
 
+/* Client design*/
+.client {
+  margin-bottom: 150px;
+  position: relative;
+  padding: 1% 8%;
+}
+
+.client-title {
+  margin-bottom: 50px;
+  display: flex;
+  gap: 15px;
+  padding: 0px 35px 35px 0px;
+  position: relative;
+}
+
+.client-title > h2 {
+  align-self: flex-end;
+  line-height: 0.7;
+  color: var(--secondary-contrast);
+}
+
+.client-title > div {
+  align-self: flex-end;
+  color: var(--secondary-contrast);
+  width: 100px;
+  font-size: 2rem;
+}
+
+.client-content {
+	display: flex;
+}
+
+.ceo-info > h2 {
+  width: 90%;
+	margin-bottom: 50px;
+}
+
+.ceo-info p {
+	line-height: 1.6;
+  width: 70%;
+}
+
+.client-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.client-comment-box {
+	margin-bottom: 50px;
+}
+
+.client-comment-box-2 {
+	margin: 0;
+}
+
+.client-review {
+	margin-bottom: 25px;
+}
+
+.client-details {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.client-details > h4 {
+	font-size: var(--P-desktop);
+}
+
+.client-details > p {
+	font-size: var(--medium-font);
+	background: var(--accent);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* Footer design*/
+.footer {
+  margin-bottom: 0;
+  padding: 0;
+	background: var(--secondary-contrast);
+}
+
+.footer-title {
+  margin-bottom: 50px;
+  display: flex;
+  gap: 15px;
+  padding: 0px 35px 35px 0px;
+  position: relative;
+}
+
+.footer-title > h2 {
+  align-self: flex-end;
+  line-height: 0.7;
+  color: var(--secondary-contrast);
+}
+
+.footer-title > div {
+  align-self: flex-end;
+  color: var(--secondary-contrast);
+  width: 100px;
+  font-size: 2rem;
+}
+/*media design*/
 .media {
   display: flex;
   flex-direction: column;
@@ -726,7 +831,7 @@ div.list-media > div > a > img {
   width: 100%;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1400px) {
   h1 {
     font-size: 4.2rem;
   }
@@ -825,10 +930,6 @@ div.list-media > div > a > img {
 		padding: 1% 5%;
     margin-bottom: 100px;
   }
-
-	.service-content {
-		flex-wrap: wrap;
-	}
 
   .back-bg3 {
     width: 150px;
@@ -971,11 +1072,5 @@ div.list-media > div > a > img {
   .project-img-box .project-img-3 {
     width: 70%;
     height: 500px;
-  }
-
-  .collection {
-    margin-bottom: 100px;
-    position: relative;
-    padding: 1% 5%;
   }
 }
